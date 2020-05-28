@@ -1,0 +1,616 @@
+/*-----------------------------------------------*/
+/* ------ Basic setup ------ */
+/*-----------------------------------------------*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html {
+    color: rgb(56, 56, 56);
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------------*/
+/* ------ Header ------ */
+/*-----------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------ Header navbar------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/*main nav*/
+.nav-btns {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+
+}
+
+/* sticky nav */
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px rgb(163, 163, 163);
+    z-index: 9999;
+}
+
+.sticky .nav-btns a:link,
+.sticky .nav-btns a:visited {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.logo-black {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .nav-btns {
+    float: right;
+    list-style: none;
+    margin-top: 25px;
+
+
+}
+
+
+/* normal part */
+
+.nav-btns li {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.nav-btns a {
+    transition: ease-in-out 0.2s;
+}
+
+.nav-btns a:link,
+.nav-btns a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 70%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-btns a:hover,
+.nav-btns a:active {
+
+    border-bottom: 2px solid #e74c3c;
+
+}
+
+/* ------ Header hero headings------ */
+
+.header-main-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+
+}
+
+header h1 {
+    margin: 0px;
+    color: white;
+    font-size: 250%;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+/* ------ Header hero buttons------ */
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+.btn-cta {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+    background-color: #d62c1a;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited,
+input[type="submit"] {
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    color: white;
+    background-color: #d62c1a;
+}
+
+/*-----------------------------------------------*/
+/* ------ Feature Section ------ */
+/*-----------------------------------------------*/
+
+.section-feature {
+    padding: 60px 0;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 180%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+
+}
+
+h2::after {
+    margin: 20px auto;
+    height: 2px;
+    background-color: #e74c3c;
+    width: 100px;
+    display: block;
+    content: " ";
+
+}
+
+.main-feature-para {
+    text-align: center;
+    line-height: 145%;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.box {
+    padding: 1%;
+    text-align: center;
+}
+
+.box h3 {
+    padding: 10px 0;
+}
+
+.box p {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.feature-Icon {
+    font-size: 200%;
+    color: #e74c3c;
+}
+
+/*-----------------------------------------------*/
+/* ------ Meals Section ------ */
+/*-----------------------------------------------*/
+
+.meals-list {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-list li {
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 0px;
+}
+
+.meal-images {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meals-list li figure img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    transform: scale(1.15);
+    transition: ease-in-out 0.2s;
+    opacity: 0.5;
+}
+
+.meals-list li figure img:hover {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*-----------------------------------------------*/
+/* ------ How it works section ------ */
+/*-----------------------------------------------*/
+
+.how-it-works-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+
+}
+
+.how-it-works-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.phone-image {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.numbers {
+    border: 2px solid #e74c3c;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+
+}
+
+.work-step p {
+    margin-left: 70px;
+
+}
+
+.app-btn img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.how-it-works-box div:last-child {
+    margin-left: 100px;
+}
+
+.steps-section {
+    margin: 70px 0;
+}
+
+/*-----------------------------------------------*/
+/* ------ Cities Section ------ */
+/*-----------------------------------------------*/
+
+.section-cities {
+    margin: 100px 0;
+
+}
+
+.city-images img {
+    width: 100%;
+    height: auto;
+}
+
+.city-details {
+    text-align: left;
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.city-icons {
+    margin-right: 10px;
+    color: #e74c3c;
+    vertical-align: middle;
+}
+
+.section-cities a:link,
+.section-cities a:visited {
+    text-decoration: none;
+    color: #e74c3c;
+    border-bottom: 1.5px solid #e74c3c;
+    transition: linear 0.1s;
+}
+
+.section-cities a:hover,
+.section-cities a:active {
+    text-decoration: none;
+    color: #2e2e2e;
+    border-bottom: 2px solid transparent;
+}
+
+/*-----------------------------------------------*/
+/* ------ Testimonials Section ------ */
+/*-----------------------------------------------*/
+
+.fa-quote-left {
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.span-1-of-3 {
+    text-align: left;
+}
+
+.testimonial-section p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.testimonial-section img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.customer p {
+    margin-left: 20px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.testimonial-section {
+    padding: 80px 0;
+    background-size: cover;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url(img/back-customers.jpg);
+    color: white;
+    background-attachment: fixed;
+}
+
+
+
+/*-----------------------------------------------*/
+/* ------ Pricing plans Section ------ */
+/*-----------------------------------------------*/
+
+.pricing-section {
+    margin: 50px 0;
+}
+
+.pricing-section h3 {
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.month-price {
+    text-align: center;
+    font-size: 180%;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.month-price span {
+    font-size: 50%;
+}
+
+.meal-price {
+    text-align: center;
+    font-size: 90%;
+}
+
+.plan-features ul {
+    list-style: none;
+}
+
+.plan-features ul li {
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.sign-up-box {
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    padding: 30px 30px;
+    box-shadow: 0px 20px 30px rgb(185, 185, 185);
+}
+
+
+.pricing-section signup-btn {
+
+    margin: 0px auto;
+}
+
+.pricing-section ion-icon {
+    margin-right: 10px;
+    color: #e74c3c;
+    vertical-align: middle;
+}
+
+.sign-up-box div:last-child {
+    text-align: center;
+}
+
+
+/*-----------------------------------------------*/
+/* ------ Contact form Section ------ */
+/*-----------------------------------------------*/
+
+
+
+.contact-form-section {
+    width: 60%;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9b9b9b;
+}
+
+input[type="submit"] {
+    background-color: white;
+}
+
+
+/*-----------------------------------------------*/
+/* ------ Footer ------ */
+/*-----------------------------------------------*/
+
+
+.footer {
+    margin-top: 50px;
+    padding: 100px;
+    padding-bottom: 0px;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.85)), url(img/5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    display: inline;
+
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li {
+    display: inline;
+
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.social-media {
+    float: right;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.842);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 80%;
+    line-height: 150%;
+}
+
+.footer p span {
+    color: #e74c3c;
+}
+
+
+/*-----------------------------------------------*/
+/* ------ animation ------ */
+/*-----------------------------------------------*/
+
+
+.js--feature-animate,
+.phone-image,
+.js--city-animation {
+    opacity: 0;
+}
+
+
+.js--feature-animate .animate__animated,
+.phone-image .animate__animated,
+.js--city-animation .animate__animated {
+    opacity: 1;
+}
