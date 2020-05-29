@@ -9,6 +9,8 @@
     .row {
         padding: 0 20px;
     }
+
+
 }
 
 
@@ -170,5 +172,71 @@
         margin-top: 100px;
         margin-left: 120px;
     }
+
+    .nav-btns {
+        display: block;
+        float: left;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    .mobile-nav-btn {
+        display: inline-block;
+        margin-top: 50px;
+
+    }
+
+    .nav-btns a:link,
+    .nav-btns a:visited {
+
+        padding-bottom: 5px;
+        border: none;
+
+    }
+
+    .nav-btns a:hover,
+    .nav-btns a:active {
+
+        border: none;
+
+    }
+
+    .nav-btns li {
+
+
+        margin-bottom: 10px;
+        font-size: 100%;
+
+    }
+
+    /* sticky mobile nav */
+
+    .sticky .mobile-nav-btn ion-icon {
+
+        color: black;
+
+    }
+
+    .sticky .mobile-nav-btn {
+        margin-top: 20px;
+    }
+
+    .sticky .nav-btns {
+        display: block;
+        float: left;
+        margin: 10px 0px 10px 70px;
+    }
+
+    /* nav buttons display*/
+
+    .nav-btns {
+        display: none;
+    }
+
+
+    .sticky .nav-btns {
+        display: none;
+    }
+
 
 }

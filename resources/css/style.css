@@ -62,6 +62,25 @@ header {
 
 }
 
+/*mobile nav*/
+
+.mobile-nav-btn {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.mobile-nav-btn ion-icon {
+    font-size: 200%;
+    color: white;
+
+}
+
+
+
+
 /* sticky nav */
 
 .sticky {
@@ -110,7 +129,7 @@ header {
 }
 
 
-/* normal part */
+/* normal nav in large screen */
 
 .nav-btns li {
     text-decoration: none;

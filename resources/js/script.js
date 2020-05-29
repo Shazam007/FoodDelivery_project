@@ -81,7 +81,28 @@ $(document).ready(function () {
     })
 
 
+    //change icon
 
+    $('.js--nav-btn').click(function () {
+
+        var nav = $('.js--main-nav');
+        var icon = $('.mobile-nav-btn ion-icon');
+        nav.slideToggle(200);
+
+
+        if (icon.hasClass('js--menu-icon')) {
+
+            document.getElementById('js--nav-btn-id').name = 'close-outline';
+            icon.removeClass('js--menu-icon');
+
+        } else {
+
+            document.getElementById('js--nav-btn-id').name = 'menu-outline';
+            icon.addClass('js--menu-icon');
+
+        }
+
+    })
 
 
 
